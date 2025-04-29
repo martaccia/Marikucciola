@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marikucciola - Focus App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:ital,wght@0,100..900;1,100..900&family=Jersey+15&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 id="main-title">
+        <img src="fatina.gif" alt="Fatina pixel art" class="pixel-fairy" />
+        ciao marika! buono studio &lt;3
+    </h1>
+    <button id="mute-btn" aria-label="Disattiva/attiva audio">🔊</button>
+    <audio id="bg-music" src="relaxing-nature.mp3" loop autoplay></audio>
+    <div id="motivational-banner"></div>
+    <canvas id="sky-canvas" width="1000" height="320"></canvas>
+    <div class="container">
+        <!-- <h1>Marikucciola</h1> -->
+        <div class="isometric-block" style="position:relative;">
+            <img src="zolla.png" alt="Zolla di terra" id="zolla">
+            <canvas id="flowers-canvas" width="320" height="210" style="position:absolute; left:0; top:0; pointer-events:none;"></canvas>
+        </div>
+        <div id="timer-section">
+            <span id="timer-display">00:00</span>
+            <div class="timer-buttons">
+                <button id="start-btn">AVVIA</button>
+                <button id="pause-btn">PAUSA</button>
+                <button id="reset-btn">RESET</button>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
